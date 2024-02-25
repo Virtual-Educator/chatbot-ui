@@ -43,7 +43,7 @@ ON storage.objects FOR SELECT
 TO authenticated
 USING (auth.uid()::text = owner_id::text);
 
--- Function to delete a storage object NEW CHANGE
+-- Function to delete a storage object
 CREATE OR REPLACE FUNCTION delete_storage_object(bucket TEXT, object TEXT, OUT status INT, OUT content TEXT)
 RETURNS RECORD
 LANGUAGE 'plpgsql'
