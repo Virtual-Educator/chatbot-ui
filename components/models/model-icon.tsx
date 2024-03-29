@@ -1,5 +1,6 @@
 import { cn } from "@/lib/utils"
 import mistral from "@/public/providers/mistral.png"
+import groq from "@/public/providers/groq.png"
 import perplexity from "@/public/providers/perplexity.png"
 import { ModelProvider } from "@/types"
 import { IconSparkles } from "@tabler/icons-react"
@@ -29,9 +30,9 @@ export const ModelIcon: FC<ModelIconProps> = ({
       return (
         <OpenAISVG
           className={cn(
-            "rounded-sm bg-[#fff] p-1 text-black",
+            "rounded-sm bg-white p-1 text-black",
             props.className,
-            theme === "dark" ? "bg-white" : "border-[1px] border-black"
+            theme === "dark" ? "bg-white" : "border-DEFAULT border-black"
           )}
           width={width}
           height={height}
@@ -42,10 +43,23 @@ export const ModelIcon: FC<ModelIconProps> = ({
         <Image
           className={cn(
             "rounded-sm p-1",
-            theme === "dark" ? "bg-white" : "border-[1px] border-black"
+            theme === "dark" ? "bg-white" : "border-DEFAULT border-black"
           )}
           src={mistral.src}
           alt="Mistral"
+          width={width}
+          height={height}
+        />
+      )
+    case "groq":
+      return (
+        <Image
+          className={cn(
+            "rounded-sm p-0",
+            theme === "dark" ? "bg-white" : "border-DEFAULT border-black"
+          )}
+          src={groq.src}
+          alt="Groq"
           width={width}
           height={height}
         />
@@ -54,9 +68,9 @@ export const ModelIcon: FC<ModelIconProps> = ({
       return (
         <AnthropicSVG
           className={cn(
-            "rounded-sm bg-[#fff] p-1 text-black",
+            "rounded-sm bg-white p-1 text-black",
             props.className,
-            theme === "dark" ? "bg-white" : "border-[1px] border-black"
+            theme === "dark" ? "bg-white" : "border-DEFAULT border-black"
           )}
           width={width}
           height={height}
@@ -66,9 +80,9 @@ export const ModelIcon: FC<ModelIconProps> = ({
       return (
         <GoogleSVG
           className={cn(
-            "rounded-sm bg-[#fff] p-1 text-black",
+            "rounded-sm bg-white p-1 text-black",
             props.className,
-            theme === "dark" ? "bg-white" : "border-[1px] border-black"
+            theme === "dark" ? "bg-white" : "border-DEFAULT border-black"
           )}
           width={width}
           height={height}
@@ -79,7 +93,7 @@ export const ModelIcon: FC<ModelIconProps> = ({
         <Image
           className={cn(
             "rounded-sm p-1",
-            theme === "dark" ? "bg-white" : "border-[1px] border-black"
+            theme === "dark" ? "bg-white" : "border-DEFAULT border-black"
           )}
           src={perplexity.src}
           alt="Mistral"
