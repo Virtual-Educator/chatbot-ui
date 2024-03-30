@@ -175,7 +175,7 @@ export default async function Login({
         <Input
           className="mb-3 rounded-md border bg-inherit px-4 py-2"
           name="email"
-          placeholder="you@example.com"
+          placeholder="you@tiffin.edu"
           required
         />
 
