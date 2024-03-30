@@ -10,7 +10,7 @@ export default function HomePage() {
   return (
     <div className="flex size-full flex-col items-center justify-center">
       <div>
-        <img src="https://raw.githubusercontent.com/Virtual-Educator/chatbot-ui/main/public/TU-256-icon.png" alt="TU Chatbot UI" />
+        <img src="https://tuonlineresources.com/images/GAI/TU-256-icon.png" alt="TU Chatbot UI" />
       </div>
 
       <div className="mt-2 text-4xl font-bold">TU Chatbot UI</div>
