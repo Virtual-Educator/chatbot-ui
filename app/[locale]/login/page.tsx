@@ -51,10 +51,17 @@ export default async function Login({
   const signIn = async (formData: FormData) => {
     "use server"
 
-    const email = formData.get("email") as string
-    const password = formData.get("password") as string
-    const cookieStore = cookies()
-    const supabase = createClient(cookieStore)
+  const email = formData.get("email") as string;
+  const password = formData.get("password") as string;
+
+  // Check if the email domain is tiffin.edu
+  if (!email.endsWith("@tiffin.edu")) {
+    // If not, redirect to a page with a message to contact support
+    return redirect(`/login?message=Please contact support at gai@tiffin.edu`);
+  }
+
+  const cookieStore = cookies();
+  const supabase = createClient(cookieStore);
 
     const { data, error } = await supabase.auth.signInWithPassword({
       email,
