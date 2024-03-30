@@ -109,11 +109,13 @@ export const ProfileSettings: FC<ProfileSettingsProps> = ({}) => {
   const [mistralAPIKey, setMistralAPIKey] = useState(
     profile?.mistral_api_key || ""
   )
-  const [groqAPIKey, setGroqAPIKey] = useState(profile?.groq_api_key || "")
+  const [groqAPIKey, setGroqAPIKey] = useState(
+    profile?.groq_api_key || ""
+  )
   const [perplexityAPIKey, setPerplexityAPIKey] = useState(
     profile?.perplexity_api_key || ""
   )
-
+  
   const [openrouterAPIKey, setOpenrouterAPIKey] = useState(
     profile?.openrouter_api_key || ""
   )
