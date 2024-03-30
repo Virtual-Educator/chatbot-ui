@@ -175,7 +175,7 @@ export default async function Login({
         <Input
           className="mb-3 rounded-md border bg-inherit px-4 py-2"
           name="email"
-          placeholder="you@example.com"
+          placeholder="you@tiffin.edu"
           required
         />
 
@@ -197,7 +197,7 @@ export default async function Login({
      //     formAction={signUp}
     //      className="border-foreground/20 mb-2 rounded-md border px-4 py-2"
         >
-    //      Sign Up
+    //      -Sign Up
     //    </SubmitButton>
 
         <div className="text-muted-foreground mt-1 flex justify-center text-sm">
