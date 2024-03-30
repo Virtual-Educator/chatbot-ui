@@ -17,7 +17,7 @@ export const Brand: FC<BrandProps> = ({ theme = "dark" }) => {
       rel="noopener noreferrer"
     >
       <div className="mb-2">
-        <ChatbotUISVG theme={theme === "dark" ? "dark" : "light"} scale={0.3} />
+         <img src="https://tuonlineresources.com/images/GAI/TU-256-icon.png" alt="TU Chatbot UI" />
       </div>
 
       <div className="text-4xl font-bold tracking-wide">TU Chatbot UI</div>
