@@ -1,6 +1,5 @@
 "use client"
 
-import { ChatbotUISVG } from "@/components/icons/chatbotui-svg"
 import { IconArrowRight } from "@tabler/icons-react"
 import { useTheme } from "next-themes"
 import Link from "next/link"
@@ -11,7 +10,7 @@ export default function HomePage() {
   return (
     <div className="flex size-full flex-col items-center justify-center">
       <div>
-        <p>hi</p><ChatbotUISVG theme={theme === "dark" ? "dark" : "light"} scale={0.3} />
+        <img src="..public/TU-256-icon.png" alt="TU Chatbot UI" />
       </div>
 
       <div className="mt-2 text-4xl font-bold">TU Chatbot UI</div>
